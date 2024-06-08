@@ -1,0 +1,41 @@
+{
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "display": "hidden"
+  },
+  "connect": {
+    "title": "Contact",
+    "type": "page",
+    "href": "mailto:support@toingg.com",
+    "newWindow": true
+  },
+  "pricing": {
+    "title": "Pricing",
+    "type": "page"
+  },
+  "docs": {
+    "title": "Documentation",
+    "type": "page"
+  },
+  "join": {
+    "title": "Join Our Community",
+    "type": "page",
+    "href": "https://discord.com/invite/ghsS3z9N",
+    "newWindow": true
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  },
+  "500": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}

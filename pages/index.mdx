@@ -1,0 +1,82 @@
+---
+title: Home
+searchable: false
+---
+
+
+{/* wrapped with {} to mark it as javascript so mdx will not put it under a p tag */}
+{<h1 className="text-center font-extrabold md:text-5xl mt-8">Build AI Calling Agent that can do</h1>}
+{<h1 class="text-gray-700 font-bold">✅Lead Generation</h1>}
+{<h1 class="text-gray-700 font-bold">✅Sales Call</h1>}
+{<h1 class="text-gray-700 font-bold">✅Recruitment</h1>}
+{<h1 class="text-gray-700 font-bold">✅B2B Data Collection</h1>}
+{<h1 class="text-gray-700 font-bold">✅Fund Raising</h1>}
+
+
+{<div className="bg-orange-100 p-4 rounded-md">
+  <p className="text-black-500 font-bold">
+    Build your own voice agent 'Coming soon'
+  </p>
+</div>}
+
+{<div className="bg-gray-100 p-4 rounded-md">
+  <p className="text-black-500 font-bold">
+    Hear it in action
+  </p>
+</div>}
+
+{<div className="max-w-md mx-auto bg-white shadow-md rounded-lg p-6">
+  <h2 className="text-2xl font-bold mb-4 text-center">Try Now</h2>
+  <h5 className="text-2xl font-bold mb-4 text-center">Get a call from Toingg</h5>
+  <form>
+    <div className="mb-4">
+      <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
+        Name
+      </label>
+      <input
+        className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:shadow-outline"
+        id="name"
+        type="text"
+        placeholder="Enter your name"
+      />
+    </div>
+    <div className="mb-4">
+      <label className="block text-gray-700 font-bold mb-2" htmlFor="mobile">
+        Mobile Number
+      </label>
+      <input
+        className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:shadow-outline"
+        id="mobile"
+        type="tel"
+        placeholder="Enter your mobile number"
+      />
+    </div>
+    <div className="mb-4">
+      <label className="block text-gray-700 font-bold mb-2" htmlFor="language">
+        Choose a Language
+      </label>
+      <select
+        className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:shadow-outline"
+        id="language"
+      >
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+      </select>
+    </div>
+    <div className="text-center">
+      <button
+        type="button"
+        className="px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+        onClick={() => {
+          const phoneNumber = document.getElementById('mobile').value;
+          window.location.href = `tel:${phoneNumber}`;
+        }}
+      >
+        Call
+      </button>
+    </div>
+  </form>
+</div>}
+

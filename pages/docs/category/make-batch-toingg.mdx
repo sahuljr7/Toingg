@@ -1,0 +1,23 @@
+# Make Batch Toingg
+
+This is used for making multiple calls.
+
+**Request type : post**
+
+**url : post/make_batch_toingg/**
+
+```markdown
+cURL Request
+curl -X 'POST' \
+  'https://call.toingg.com/api/make_batch_toingg/?apiKey=your_api_key' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "campaign": "campaign_name",
+    "numberList": {
+        "Name 1": "+918140678549",
+        "Name 2": "+917016333728",
+        "Name 3": "+919737638820"
+    }
+}'
+```

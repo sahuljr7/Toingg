@@ -1,0 +1,45 @@
+# Make Toingg
+
+This endpoint enables users to get started with making a call using Toingg.
+
+**Request type : post**
+
+**url : post/make_toingg/**
+
+## cURL Request
+
+```markdown
+curl -X 'POST' \
+  'https://api.toingg.com/make_toingg/?apiKey=your_api_key' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "campaign": "campaign_name",
+    "name": "John Doe",
+    "phoneNumber": "+1234567890"
+  }'
+```
+
+## Parameters
+
+| Name   | Type   | In    |
+| ------ | ------ | ----- |
+| apiKey | string | query |
+
+apiKey is required
+
+## Request body
+
+request body is required
+
+**Media type:** application/json
+
+**Example Value | schema**
+
+```markdown
+{
+  "campaign": "string",
+  "name": "string",
+  "phoneNumber": "string"
+}
+```
