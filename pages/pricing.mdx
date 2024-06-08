@@ -1,153 +1,29 @@
 ---
-title: Research
+title: Pricing
 authors: ['Sahul Kumar Parida']
 ---
 
-import { Tabs, WrapContent } from '../components/Tabs'
-import { Callout } from 'nextra-theme-docs'
+import PricingCard from '../components/PricingCard.js';
 
-# We have got the perfect plan for you
+## Our Pricing Plans
 
-<Tabs tabs={["Free", "Find a Plan", "Pro", "Business", "Agency", "Enterprise"]}>
-    <WrapContent>
-    ## $0/mo
-Get started building Toingg agents for free or not
-{<div className="flex justify-center mt-8">
-  <button
-    className="px-4 py-2 bg-orange-500 text-white font-bold rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
-  >
-    Get Started
-  </button>
-</div>}
-
-{<div className="p-4">
-  <p>
-    ✓ 10 minutes per month<br />
-   ✓ Unlimited seats
-  </p>
-</div>}
-    </WrapContent>
-
-    <WrapContent>
-    ## $30/mo
-    Find a plan that fits your needs and budget.
-
-    {<div className="flex justify-center mt-8">
-  <button
-    className="px-4 py-2 bg-orange-500 text-white font-bold rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
-  >
-    Get Started
-  </button>
-</div>}
-
-{<div className="p-4">
-  <p>
-    ✓ Outbound Calls<br />
-   ✓ 500ms Response Time <br />
-   ✓ Interruption Handling <br />
-   ✓ Re-scheduling Agent
-  </p>
-</div>}
-    </WrapContent>
-
-    <WrapContent>
-    ## $150/mo 
-    Use Toingg to grow your small business.
-
-    {<div className="flex justify-center mt-8">
-  <button
-    className="px-4 py-2 bg-orange-500 text-white font-bold rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
-  >
-    Get Started
-  </button>
-</div>}
-
-{<div className="p-4">
-  <p>
-    ✓ Batch Calling - up to 20 Calls<br />
-   ✓ Re-scheduling Agent <br />
-   ✓ Outbound Calling <br />
-   ✓ Interruption Handling <br />
-    ✓ 500ms Response Time
-  </p>
-</div>}
-    </WrapContent>
-
-<WrapContent>
-## $300/mo  
-    Reliably handle both your inbound and outbound call traffic.
-
-    {<div className="flex justify-center mt-8">
-  <button
-    className="px-4 py-2 bg-orange-500 text-white font-bold rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
-  >
-    Get Started
-  </button>
-</div>}
-
-{<div className="p-4">
-  <p>
-    ✓ Batch Calling - up to 40 Calls<br />
-   ✓ Contextual Memory <br />
-   ✓ Re-scheduling Agent <br />
-   ✓ Interruption Handling <br />
-    ✓ 500ms Response Time <br />
-   ✓ Outbound Calling
-  </p>
-</div>}
-</WrapContent>
-
-<WrapContent>
-## $1000/mo
-    Our advanced white label solution for industry partners and early adopters.
-
-    {<div className="flex justify-center mt-8">
-  <button
-    className="px-4 py-2 bg-orange-500 text-white font-bold rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
-  >
-    Get Started
-  </button>
-</div>}
-
-{<div className="p-4">
-  <p>
-    ✓ Dedicated Servers<br />
-   ✓ Batch Calling - up to 60 calls <br />
-   ✓ No rate limits <br />
-   ✓ Contextual Memory <br />
-    ✓ Re-scheduling Agent <br />
-   ✓ Interruption Handling <br />
-   ✓ 500ms Response Time <br />
-   ✓ Outbound Calling
-  </p>
-</div>}
-</WrapContent>
-
-<WrapContent>
-## $10,000/mo
-    Automate your enterprise using conversational AI.
-
-    {<div className="flex justify-center mt-8">
-  <button
-    className="px-4 py-2 bg-orange-500 text-white font-bold rounded-full hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
-  >
-    Get Started
-  </button>
-</div>}
-
-{<div className="p-4">
-  <p>
-    ✓ Dedicated Servers and Priority Services<br />
-   ✓ Batch Calling - up to 80 calls <br />
-   ✓ Unlimited Contextual Memory <br />
-   ✓ No rate limits <br />
-    ✓ Re-scheduling Agent <br />
-   ✓ Interruption Handling <br />
-   ✓ 500ms Response Time <br />
-   ✓ Outbound Calling
-  </p>
-</div>}
-</WrapContent>
-
-</Tabs>
-
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <PricingCard
+    title="Starter"
+    price="$10"
+    features={["10 projects", "Basic analytics", "Email support"]}
+    color="bg-blue-200"
+  />
+  <PricingCard
+    title="Pro"
+    price="$25"
+    features={["50 projects", "Advanced analytics", "Priority email support"]}
+    color="bg-green-200"
+  />
+  <PricingCard
+    title="Enterprise"
+    price="$50"
+    features={["Unlimited projects", "Custom analytics", "Phone support"]}
+    color="bg-purple-200"
+  />
+</div>

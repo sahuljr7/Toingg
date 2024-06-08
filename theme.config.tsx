@@ -8,11 +8,8 @@ export default {
       </span>
     </>
   ),
-  project: {
-    link: 'https://github.com/sahuljr7'
-  },
   faviconGlyph: '✦',
-  docsRepositoryBase: 'https://github.com/sahuljr7/Sahul_DevBook/issues',
+  docsRepositoryBase: 'https://github.com/rohanot',
   useNextSeoProps() {
     const { asPath } = useRouter()
     if (asPath !== '/') {
